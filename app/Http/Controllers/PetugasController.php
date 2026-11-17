@@ -16,10 +16,9 @@ class PetugasController extends Controller
         return view('/register');
     }
     public function proseslogin(request $request){
-        //validasi
         $request->validate([
             'email'=>'required',
-            'password'=>'required',
+            'password'=>'required'
         ]);
 
         $ambildata=$request->only('email','password');
@@ -32,5 +31,17 @@ class PetugasController extends Controller
             return back()->with('pesan','email atau password salah');
         }
       
+    }
+
+    public function buat(request $request){
+        $request->validate([
+            'NamaLengkap'=>'required',
+            'Email'=>'required|unique:email|email',
+            'NoTelpon'=>'required|string',
+            'Alamat'=>'required|string',
+            'KataSandi'=>'required|min:6',
+            'Ulangi'=>'required|same:password'
+        ]);
+        return back()->with('pesan','akun telah di buat');
     }
 }

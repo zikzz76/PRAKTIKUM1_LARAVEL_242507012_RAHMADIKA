@@ -124,20 +124,20 @@
         <div class="form-group">
           <label>Alamat Email Pasien</label>
           <input
+            name="email"
             type="email"
             class="form-control"
             placeholder="nama@email.com"
-            required
           />
         </div>
 
         <div class="form-group">
           <label>Kata Sandi</label>
           <input
+            name="password"
             type="password"
             class="form-control"
             placeholder="Masukkan kata sandi akun"
-            required
           />
         </div>
 

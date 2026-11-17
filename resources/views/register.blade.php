@@ -131,40 +131,40 @@
         <div class="form-group">
           <label>Nama Lengkap Pasien</label>
           <input
+            name="NamaLengkap"
             type="text"
             class="form-control"
             placeholder="Contoh: Rina Safitri"
-            required
           />
         </div>
 
         <div class="form-group">
           <label>Alamat Email</label>
           <input
+            name="Email"
             type="email"
             class="form-control"
             placeholder="nama@email.com"
-            required
           />
         </div>
 
         <div class="form-group">
           <label>Nomor Telepon / WhatsApp</label>
           <input
+            name="NoTelpon"
             type="tel"
             class="form-control"
             placeholder="081234567890"
-            required
           />
         </div>
 
         <div class="form-group">
           <label>Alamat Domisili</label>
           <textarea
+            name="Alamat"
             class="form-control"
             rows="2"
             placeholder="Alamat lengkap tempat tinggal"
-            required
           ></textarea>
         </div>
 
@@ -172,19 +172,19 @@
           <div class="form-group">
             <label>Kata Sandi</label>
             <input
+              name="KataSandi"
               type="password"
               class="form-control"
               placeholder="Minimal 6 karakter"
-              required
             />
           </div>
           <div class="form-group">
             <label>Ulangi Sandi</label>
             <input
+              name="Ulangi"
               type="password"
               class="form-control"
               placeholder="Ketik ulang sandi"
-              required
             />
           </div>
         </div>
