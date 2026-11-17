@@ -9,4 +9,7 @@ Route::get('/', function () {
 
 route::get('/login',[PetugasController::class,'login']);
 route::post('/login',[PetugasController::class,'proseslogin']);
-
+route::get('/register',[PetugasController::class,'regis']);
+route::get('/dashboard', function (){
+    return view('dashboard');
+});

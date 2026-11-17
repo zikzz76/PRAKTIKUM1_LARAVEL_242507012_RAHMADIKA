@@ -127,10 +127,10 @@
       </div>
 
       <form action="" method="POST">
+        @csrf
         <div class="form-group">
           <label>Nama Lengkap Pasien</label>
           <input
-            name="NamaPasien"
             type="text"
             class="form-control"
             placeholder="Contoh: Rina Safitri"
@@ -141,7 +141,6 @@
         <div class="form-group">
           <label>Alamat Email</label>
           <input
-            name="EmailPasien"
             type="email"
             class="form-control"
             placeholder="nama@email.com"
@@ -152,7 +151,6 @@
         <div class="form-group">
           <label>Nomor Telepon / WhatsApp</label>
           <input
-            name="NoTelpon"
             type="tel"
             class="form-control"
             placeholder="081234567890"
@@ -163,7 +161,6 @@
         <div class="form-group">
           <label>Alamat Domisili</label>
           <textarea
-            name="AlamatPasien"
             class="form-control"
             rows="2"
             placeholder="Alamat lengkap tempat tinggal"
@@ -175,7 +172,6 @@
           <div class="form-group">
             <label>Kata Sandi</label>
             <input
-              name="KataSandi"
               type="password"
               class="form-control"
               placeholder="Minimal 6 karakter"
@@ -185,7 +181,6 @@
           <div class="form-group">
             <label>Ulangi Sandi</label>
             <input
-              name="UlangiSandi"
               type="password"
               class="form-control"
               placeholder="Ketik ulang sandi"
@@ -194,7 +189,7 @@
           </div>
         </div>
 
-        <button name="BtnDaftar" type="submit" class="btn-submit">Daftarkan Akun Pasien</button>
+        <button type="submit" class="btn-submit">Daftarkan Akun Pasien</button>
       </form>
 
       <div class="auth-footer">

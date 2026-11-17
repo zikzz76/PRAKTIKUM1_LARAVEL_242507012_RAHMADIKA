@@ -12,17 +12,20 @@ class PetugasController extends Controller
         return view('/login');
     }
 
+     public function regis(){
+        return view('/register');
+    }
     public function proseslogin(request $request){
         //validasi
         $request->validate([
             'email'=>'required',
-            'katasandi'=>'required',
+            'password'=>'required',
         ]);
 
-        $ambildata=$request->only('email','katasandi');
+        $ambildata=$request->only('email','password');
 
         if(Auth::attempt($ambildata)){
-            $request = redirect()->interted('/dashboard');
+            redirect('dashboard')->with('pesan','berhasil masuk');
         }
         else
         {
