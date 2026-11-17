@@ -13,11 +13,6 @@ return new class extends Migration
     {
         Schema::create('tb_pasiens', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_lengkap')->varchar(100);
-            $table->string('email')->varchar(100);
-            $table->string('no_pasien')->varchar(20);
-            $table->
-            $table->string('password')->varchar(255);
             $table->timestamps();
         });
     }
